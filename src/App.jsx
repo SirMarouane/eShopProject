@@ -10,10 +10,10 @@ function App() {
   <div>
     <Navbar/>
 
-    <div className="flex flex-col justify-center items-center w-screen">
+    <div className="flex justify-center items-center w-screen">
       
 
-      <div className="flex gap-8 flex-wrap">
+      <div className="flex gap-8 w-[80%] flex-wrap justify-center items-center ">
         
         {
           lesmontres.map((elements,id) => {
