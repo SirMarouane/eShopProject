@@ -11,15 +11,11 @@ import React from "react";
 
 
 function App() {
-  let panier = []
-  // const [pannier, setpannier] = useState([])
-  // console.log(info.montres_de_luxe[0].stock);
-  function panieradd(elements) {
-    console.log(elements);
-    // panier.push(info.montres_de_luxe[0].marque)
-    
-  }
-  console.log(panier);
+  
+  let paniermarque = []
+  let panierprix = []
+  
+  
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
     <Navbar sac={Sac}
@@ -34,7 +30,7 @@ function App() {
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
-              <Cards key={id} panieradd={panieradd}  stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
+              <Cards key={id} panierprix={panierprix} paniermarque={paniermarque} stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
             )
           })
         }
