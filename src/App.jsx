@@ -11,7 +11,7 @@ function App() {
   <div className="overflow-x-hidden w-screen">
     <Navbar/>
 
-    <div className="flex justify-center items-center w-full overflow-x-hidden">
+    <div className="flex justify-center items-center w-full">
       
 
       <div className="flex gap-8 w-[80%] flex-wrap justify-center items-center ">
