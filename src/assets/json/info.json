@@ -6,71 +6,71 @@
         "nom": "Submariner",
         "prix": 9999.99,
         "stock": 5,
-        "img":"./../images/submariner.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/24531664-ghvx7unzu2hav4l506iu4twt-Square280.jpg"
     },
       {
         "marque": "Patek Philippe",
         "nom": "Nautilus",
         "prix": 29999.99,
         "stock": 2,
-        "img":"./../images/nautilus.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31637209-iks4lehqfmhw4xbugpsbcy1h-Square280.jpg"
     },
       {
         "marque": "Audemars Piguet",
         "nom": "Royal Oak",
         "prix": 25999.99,
         "stock": "or jaune",
-        "img":"./../images/audemare.jpeg"  
+        "img":"https://cdn2.chrono24.com/images/uhren/20825272-ip7yxdx73k7jopl2q20xmdvf-Square280.jpg"  
     },
       {
         "marque": "Hublot",
         "nom": "Big Bang",
         "prix": 18999.99,
         "stock": 3,
-        "img":"./../images/hublot.png"  
+        "img":"https://cdn2.chrono24.com/images/uhren/19920829-w2al9eulw4pgqzzi27x2zvat-Square280.jpg"  
     },
       {
         "marque": "BlancPain",
         "nom": "Fifty Fathoms",
         "prix": 12500,
         "stock": 1,
-        "img":"./../images/blanpain.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/27941567-npg8yromzvzoeutsf7es8nde-Square280.jpg"
     },
       {
         "marque": "Omega",
         "nom": "Speedmaster",
         "prix": 8999.99,
         "stock": 6,
-        "img":"./../images/omega-speedmaster.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/32781996-8vz8ydnvszhuxzyce1jk27t1-Square280.jpg"
     },
       {
         "marque": "Jaeger-LeCoultre",
         "nom": "Reverso",
         "prix": 12999.99,
         "stock": 2,
-        "img":"./../images/reverso.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/33038095-6rwaob1g7xwm4h9wvib6daqz-Square280.jpg"
     },
       {
         "marque": "Rolex",
         "nom": "Sea Dweller",
         "prix": 13880,
         "stock": 8,
-        "img":"./../images/Dweller.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31803799-4xzoosklztt7b07utg1o879m-Square280.jpg"
     },
       {
         "marque": "Vacheron Constantin",
         "nom": "Overseas",
         "prix": 108000,
         "stock": 2,
-        "img":"./../images/overseas-tourbillon.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31509840-y2vok94fdfgvbjorgfr43ujm-Square280.jpg"
     },
 
     {
-        "marque": "Richard Mille",
-        "nom": "Dyson Fire",
+        "marque": "Casio",
+        "nom": "G-Shock",
         "prix": 200000,
         "stock": 7,
-         "img":"./../images/richard-mille.jpg"
+         "img":"https://cdn2.chrono24.com/images/uhren/31092148-4rzgh69hr6a6sveq8d5rjkdg-Square280.jpg"
     }
 
     ]
