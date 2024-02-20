@@ -10,7 +10,7 @@ export default function Cards(props) {
             <h2 className="card-title">{props.nom}</h2>
             <p>{props.marque}</p>
             <p>price:  {props.prix}$</p>
-            <p className='text-white'>stock</p>
+            <p className='text-white'>stock : {props.stock}</p>
 
             <div className="card-actions">
             <button className="btn btn-active w-56">buy</button>
