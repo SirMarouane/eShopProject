@@ -2,10 +2,11 @@ import test from "./assets/images/richard-mille.jpg"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Cards from "./components/Cards"
+import info from './assets/json/info.json';
 
 function App() {
-  let lesmontres = ["ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi",]
-
+  
+  console.log(info.montres_de_luxe);
   return (
   <div className="overflow-x-hidden w-screen">
     <Navbar/>
@@ -16,7 +17,7 @@ function App() {
       <div className="flex gap-8 w-[80%] flex-wrap justify-center items-center ">
         
         {
-          lesmontres.map((elements,id) => {
+          info.montres_de_luxe.map((elements,id) => {
             return (
               <Cards key={id} img={test}></Cards>
             )
