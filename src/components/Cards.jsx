@@ -7,9 +7,9 @@ export default function Cards(props) {
             <img src={props.img} alt="" className="rounded-xl "/>
         </figure>
         <div className="card-body items-center text-center pb-2 ">
-            <h2 className="card-title">Richard Mille </h2>
-            <p>model 44CBR</p>
-            <p>prix</p>
+            <h2 className="card-title">{props.nom}</h2>
+            <p>{props.marque}</p>
+            <p>price:  {props.prix}$</p>
             <p className='text-white'>stock</p>
 
             <div className="card-actions">
