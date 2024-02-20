@@ -11,7 +11,9 @@ function App() {
   console.log(info.montres_de_luxe);
   return (
   <div className="overflow-x-hidden w-[98vw] ">
-    <Navbar sac={Sac}/>
+    <Navbar sac={Sac}
+            Logo={Logo}
+    />
 
     <div className="flex justify-center items-center w-[98vw] overflow-x-hidden pb-[10%]">
       
