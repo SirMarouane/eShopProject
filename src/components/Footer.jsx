@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <div>
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
@@ -16,7 +16,9 @@ export default function Footer() {
                 </div>
             </nav> 
             <aside>
+                <img className='pb-6' src={props.Logo} width="50%" alt="" />
                 <p>Copyright © 2024 - All right reserved by Charlton & co.</p>
+                
             </aside>
 </footer>
 
