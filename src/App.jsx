@@ -5,11 +5,21 @@ import Cards from "./components/Cards"
 import info from './assets/json/info.json';
 import Sac from "./assets/images/sac-de-courses.png"
 import Logo from "./assets/images/logo2.png"
+import { useState } from "react";
+import { useRef } from "react";
+import React from "react";
 
 
 function App() {
-  
-  console.log(info.montres_de_luxe[0].stock);
+  let panier = []
+  // const [pannier, setpannier] = useState([])
+  // console.log(info.montres_de_luxe[0].stock);
+  function panieradd(elements) {
+    console.log(elements);
+    // panier.push(info.montres_de_luxe[0].marque)
+    
+  }
+  console.log(panier);
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
     <Navbar sac={Sac}
@@ -24,7 +34,7 @@ function App() {
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
-              <Cards key={id} stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img}></Cards>
+              <Cards key={id} panieradd={panieradd}  stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
             )
           })
         }
