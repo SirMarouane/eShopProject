@@ -9,13 +9,13 @@ function App() {
   
   console.log(info.montres_de_luxe);
   return (
-  <div className="overflow-x-hidden w-screen">
+  <div className="overflow-x-hidden w-[98vw]">
     <Navbar sac={Sac}/>
 
-    <div className="flex justify-center items-center w-full overflow-x-hidden">
+    <div className="flex justify-center items-center w-[98vw] overflow-x-hidden">
       
 
-      <div className="flex gap-8 w-[80%] flex-wrap justify-center items-center ">
+      <div className="flex gap-16 w-[80%] flex-wrap justify-center items-center ">
         
         {
           info.montres_de_luxe.map((elements,id) => {

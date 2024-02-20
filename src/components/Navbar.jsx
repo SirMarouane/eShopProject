@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar(props) {
   return (
-    <div>
+    <div className='pb-10'>
 
         <div className="navbar bg-base-100">
             <div className="navbar-start">
