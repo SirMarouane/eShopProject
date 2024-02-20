@@ -2,13 +2,14 @@ import test from "./assets/images/richard-mille.jpg"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Cards from "./components/Cards"
+import Sac from "./assets/images/sac-de-courses.png"
 
 function App() {
   let lesmontres = ["ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi",]
 
   return (
   <div>
-    <Navbar/>
+    <Navbar sac={Sac}/>
 
     <div className="flex flex-col justify-center items-center w-screen">
       
