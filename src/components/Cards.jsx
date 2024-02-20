@@ -3,22 +3,24 @@ import { useState } from 'react';
 
 export default function Cards(props) {
   const [chose, setchose] = useState("")
-  let paniermarque = []
-  let panierprix = []
+  
   
   const [stock, setstock] = useState(props.stock)
   function panier(params) {
     setchose("ewa")
-    paniermarque.push(props.marque)
-    panierprix.push(props.prix)
-    console.log(chose);
-    console.log(paniermarque);
-    console.log(panierprix);
     setstock(stock-1)
+    if (stock>=1) {
+      props.paniermarque.push(props.marque)
+      props.panierprix.push(props.prix)
+      
+    }
     if (stock<=0) {
       setstock(0)
     }
-    console.log(stock);
+    // console.log(stock);
+    // console.log(chose);
+    console.log(props.paniermarque);
+    console.log(props.panierprix);
 
   }
 
