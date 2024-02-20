@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "MoonLight";
+  src: url(./assets/font/MoonLight.otf);
+}
+
+body{
+font-family: MoonLight;
+
+}
