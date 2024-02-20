@@ -5,11 +5,11 @@ import Cards from "./components/Cards"
 import info from './assets/json/info.json';
 import Sac from "./assets/images/sac-de-courses.png"
 import Logo from "./assets/images/logo2.png"
-import imgrolex from "./assets/images/submariner.jpg"
+
 
 function App() {
   
-  console.log(info.montres_de_luxe[0].img);
+  console.log(info.montres_de_luxe[0].prix);
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
     <Navbar sac={Sac}
@@ -24,7 +24,7 @@ function App() {
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
-              <Cards key={id} img={info.montres_de_luxe[id].img}></Cards>
+              <Cards key={id} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img}></Cards>
             )
           })
         }
