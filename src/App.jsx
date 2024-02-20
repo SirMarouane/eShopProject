@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 import Cards from "./components/Cards"
 
 function App() {
-  
+  let lesmontres = ["ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi","ewa","zebi",]
 
   return (
   <div>
@@ -14,13 +14,15 @@ function App() {
       
 
       <div className="flex gap-8 flex-wrap">
-        <Cards img={test}/>
-        <Cards img={test}/>
-        <Cards img={test}/>
-        <Cards img={test}/>
-
+        
+        {
+          lesmontres.map((elements,id) => {
+            return (
+              <Cards key={id} img={test}></Cards>
+            )
+          })
+        }
       </div>
-      
 
     </div>
 
