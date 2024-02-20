@@ -1,0 +1,77 @@
+
+{
+    "montres_de_luxe": [
+      {
+        "marque": "Rolex",
+        "nom": "Submariner",
+        "prix": 9999.99,
+        "stock": 5,
+        "img":"./../images/submariner.jpg"
+    },
+      {
+        "marque": "Patek Philippe",
+        "nom": "Nautilus",
+        "prix": 29999.99,
+        "stock": 2,
+        "img":"./../images/nautilus.jpg"
+    },
+      {
+        "marque": "Audemars Piguet",
+        "nom": "Royal Oak",
+        "prix": 25999.99,
+        "stock": "or jaune",
+        "img":"./../images/audemare.jpeg"  
+    },
+      {
+        "marque": "Hublot",
+        "nom": "Big Bang",
+        "prix": 18999.99,
+        "stock": 3,
+        "img":"./../images/hublot.png"  
+    },
+      {
+        "marque": "BlancPain",
+        "nom": "Fifty Fathoms",
+        "prix": 12500,
+        "stock": 1,
+        "img":"./../images/blanpain.jpg"
+    },
+      {
+        "marque": "Omega",
+        "nom": "Speedmaster",
+        "prix": 8999.99,
+        "stock": 6,
+        "img":"./../images/omega-speedmaster.jpg"
+    },
+      {
+        "marque": "Jaeger-LeCoultre",
+        "nom": "Reverso",
+        "prix": 12999.99,
+        "stock": 2,
+        "img":"./../images/reverso.jpg"
+    },
+      {
+        "marque": "Rolex",
+        "nom": "Sea Dweller",
+        "prix": 13880,
+        "stock": 8,
+        "img":"./../images/Dweller.jpg"
+    },
+      {
+        "marque": "Vacheron Constantin",
+        "nom": "Overseas",
+        "prix": 108000,
+        "stock": 2,
+        "img":"./../images/overseas-tourbillon.jpg"
+    },
+
+    {
+        "marque": "Richard Mille",
+        "nom": "Dyson Fire",
+        "prix": 200000,
+        "stock": 7,
+         "img":"./../images/richard-mille.jpg"
+    }
+
+    ]
+  }
