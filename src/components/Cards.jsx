@@ -2,28 +2,25 @@ import React from 'react'
 import { useState } from 'react';
 
 export default function Cards(props) {
-  const [chose, setchose] = useState("")
-  
   
   const [stock, setstock] = useState(props.stock)
   function panier(params) {
-    setchose("ewa")
     setstock(stock-1)
     if (stock>=1) {
       props.paniermarque.push(props.marque)
       props.panierprix.push(props.prix)
+      // props.setitems(props.paniermarque.length)
+      
+      console.log(props.paniermarque.length);
+      console.log(props.paniermarque);
       
     }
     if (stock<=0) {
       setstock(0)
     }
-    // console.log(stock);
-    // console.log(chose);
-    console.log(props.paniermarque);
-    console.log(props.panierprix);
-
+    // console.log(props.paniermarque);
+    // console.log(props.panierprix);
   }
-
   return (
     <div className={`card w-60  shadow-xl  hover:bg-[#DCA54C]/35 hover:text-black hover:border-[1px] hover:border-[#DCA54C]/35 ${stock == 1 ? "bg-orange-600" : stock == 0 ? "bg-red-600":"bg-base-100"} `}>
         <figure className="">
