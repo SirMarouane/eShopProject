@@ -1,7 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
+import { useRef } from 'react';
+
 
 export default function Navbar(props) {
+    const [hidden , sethidden ] = useState("")
+    function hide() {
+        sethidden("hidden")
+    }
     
   return (
     <div className='pb-10 w-full'>
@@ -24,13 +30,13 @@ export default function Navbar(props) {
                         <div className="card-body">
                             <span className="font-bold text-lg">{props.monpannier.length} Items</span>
                             <span className="text-info">Subtotal:</span>
-                            <div className="card-actions">
+                            <div className="card-actions "> 
                                 {
-                                    props.monpannier.map((element,id)=>{     
+                                    props.monpannier.map((element,id)=>{   
                                         return (
-                                            <button className="btn btn-primary btn-block h-[65px]">
-                                            <h1>{props.info.montres_de_luxe[id].marque} {props.info.montres_de_luxe[id].nom}</h1> 
-                                            <p className=' text-red-600'>{props.info.montres_de_luxe[id].prix}$</p>  
+                                            <button onClick={()=>{hide()}} className={`btn btn-primary btn-block h-[65px] ${hidden}`}>
+                                            <h1>{props.brand[id]} {props.monpannier[id]}</h1> 
+                                            <p className=' text-red-600'>{props.cout[id]}$</p>  
                                             </button>
                                         )
                                     })

@@ -8,14 +8,15 @@ export default function Cards(props) {
     setstock(stock-1)
     if (stock>=1) {
       
-      props.setmonpannier([...props.monpannier, props.marque])
-      console.log(props.monpannier); 
+      props.setmonpannier([...props.monpannier, props.nom])
+      props.setbrand([...props.brand, props.marque])
+      props.setcout([...props.cout, props.prix])
     }
     if (stock<=0) {
       setstock(0)
     }
   }
-
+  
   return (
     <div className={`card w-60  shadow-xl  hover:bg-[#DCA54C]/35 hover:text-black hover:border-[1px] hover:border-[#DCA54C]/35 ${stock == 1 ? "bg-orange-600" : stock == 0 ? "bg-red-600":"bg-base-100"} `}>
         <figure className="">
@@ -26,7 +27,6 @@ export default function Cards(props) {
             <p>{props.marque}</p>
             <p>price:  {props.prix}$</p>
             <p className='text-white'>stock : {stock}</p>
-
             <div className="card-actions">
             <button onClick={()=>{panier()}} className="btn btn-active w-56">buy</button>
             </div>
