@@ -33,9 +33,9 @@ export default function Navbar(props) {
                                 {
                                     props.monpannier.map((element,id)=>{     
                                         return (
-                                            <button className="btn btn-primary btn-block">
+                                            <button className="btn btn-primary btn-block h-[65px]">
                                             <h1>{props.info.montres_de_luxe[id].marque} {props.info.montres_de_luxe[id].nom}</h1> 
-                                            <p className='text-red-600'>{props.info.montres_de_luxe[id].prix}$</p>  
+                                            <p className=' text-red-600'>{props.info.montres_de_luxe[id].prix}$</p>  
                                             </button>
                                         )
                                     })
