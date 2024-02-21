@@ -6,63 +6,72 @@
         "nom": "Submariner",
         "prix": 9999.99,
         "stock": 5,
-        "img":"https://cdn2.chrono24.com/images/uhren/24531664-ghvx7unzu2hav4l506iu4twt-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/24531664-ghvx7unzu2hav4l506iu4twt-Square280.jpg",
+        "id":0
     },
       {
         "marque": "Patek Philippe",
         "nom": "Nautilus",
         "prix": 29999.99,
         "stock": 2,
-        "img":"https://cdn2.chrono24.com/images/uhren/31637209-iks4lehqfmhw4xbugpsbcy1h-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31637209-iks4lehqfmhw4xbugpsbcy1h-Square280.jpg",
+        "id":1
     },
       {
         "marque": "Audemars Piguet",
         "nom": "Royal Oak",
         "prix": 25999.99,
         "stock": 4,
-        "img":"https://cdn2.chrono24.com/images/uhren/20825272-ip7yxdx73k7jopl2q20xmdvf-Square280.jpg"  
+        "img":"https://cdn2.chrono24.com/images/uhren/20825272-ip7yxdx73k7jopl2q20xmdvf-Square280.jpg",
+        "id":2  
     },
       {
         "marque": "Hublot",
         "nom": "Big Bang",
         "prix": 18999.99,
         "stock": 3,
-        "img":"https://cdn2.chrono24.com/images/uhren/19920829-w2al9eulw4pgqzzi27x2zvat-Square280.jpg"  
+        "img":"https://cdn2.chrono24.com/images/uhren/19920829-w2al9eulw4pgqzzi27x2zvat-Square280.jpg",
+        "id":3  
     },
       {
         "marque": "BlancPain",
         "nom": "Fifty Fathoms",
         "prix": 12500,
         "stock": 4,
-        "img":"https://cdn2.chrono24.com/images/uhren/27941567-npg8yromzvzoeutsf7es8nde-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/27941567-npg8yromzvzoeutsf7es8nde-Square280.jpg",
+        "id":4
     },
       {
         "marque": "Omega",
         "nom": "Speedmaster",
         "prix": 8999.99,
         "stock": 6,
-        "img":"https://cdn2.chrono24.com/images/uhren/32781996-8vz8ydnvszhuxzyce1jk27t1-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/32781996-8vz8ydnvszhuxzyce1jk27t1-Square280.jpg",
+        "id":5
     },
       {
         "marque": "Jaeger-LeCoultre",
         "nom": "Reverso",
         "prix": 12999.99,
         "stock": 2,
-        "img":"https://cdn2.chrono24.com/images/uhren/33038095-6rwaob1g7xwm4h9wvib6daqz-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/33038095-6rwaob1g7xwm4h9wvib6daqz-Square280.jpg",
+        "id":6
     },
       {
         "marque": "Rolex",
         "nom": "Sea Dweller",
         "prix": 13880,
         "stock": 8,
-        "img":"https://cdn2.chrono24.com/images/uhren/31803799-4xzoosklztt7b07utg1o879m-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31803799-4xzoosklztt7b07utg1o879m-Square280.jpg",
+        "id":7
     },
       {
         "marque": "Vacheron Constantin",
         "nom": "Overseas",
         "prix": 108000,
         "stock": 2,
-        "img":"https://cdn2.chrono24.com/images/uhren/31509840-y2vok94fdfgvbjorgfr43ujm-Square280.jpg"
+        "img":"https://cdn2.chrono24.com/images/uhren/31509840-y2vok94fdfgvbjorgfr43ujm-Square280.jpg",
+        "id":8
     },
 
     {
@@ -70,7 +79,8 @@
         "nom": "G-Shock",
         "prix": 300,
         "stock": 7,
-         "img":"https://cdn2.chrono24.com/images/uhren/31092148-4rzgh69hr6a6sveq8d5rjkdg-Square280.jpg"
+         "img":"https://cdn2.chrono24.com/images/uhren/31092148-4rzgh69hr6a6sveq8d5rjkdg-Square280.jpg",
+         "id":9
     }
 
     ]

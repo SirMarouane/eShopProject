@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 
 export default function Navbar(props) {
-    
+    // console.log(props.info.montres_de_luxe);
   return (
     <div className='pb-10 w-full'>
         <div className="navbar bg-base-100">
@@ -26,11 +26,12 @@ export default function Navbar(props) {
                             <span className="text-info">Subtotal:</span>
                             <div className="card-actions">
                                 {
-                                    props.monpannier.map((element,id)=>{     
+                                    props.monpannier.map((element,id)=>{   
+                                        
                                         return (
                                             <button className="btn btn-primary btn-block h-[65px]">
-                                            <h1>{props.info.montres_de_luxe[id].marque} {props.info.montres_de_luxe[id].nom}</h1> 
-                                            <p className=' text-red-600'>{props.info.montres_de_luxe[id].prix}$</p>  
+                                            <h1>{props.brand[id]} {props.monpannier[id]}</h1> 
+                                            <p className=' text-red-600'>{props.cout[id]}$</p>  
                                             </button>
                                         )
                                     })
