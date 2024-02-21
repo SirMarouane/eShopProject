@@ -6,7 +6,6 @@ import info from './assets/json/info.json';
 import Sac from "./assets/images/sac-de-courses.png"
 import Logo from "./assets/images/logo2.png"
 import { useState } from "react";
-import { useRef } from "react";
 import React from "react";
 
 function App() {
@@ -15,6 +14,7 @@ function App() {
   const [cout, setcout] = useState([])
   
   return (
+    
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
     <Navbar cout={cout} monpannier={monpannier} brand={brand} setbrand={setbrand} info={info} sac={Sac} Logo={Logo}/>
     <div className="pt-10 flex justify-center items-center w-[60%] pb-[10%]">
