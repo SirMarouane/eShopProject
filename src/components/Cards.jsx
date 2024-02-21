@@ -4,17 +4,19 @@ import { useState } from 'react';
 export default function Cards(props) {
   
   const [stock, setstock] = useState(props.stock)
-  function panier(params) {
+  function panier() {
     setstock(stock-1)
     if (stock>=1) {
-      props.paniermarque.push(props.marque)
-      props.panierprix.push(props.prix)
+      // props.paniermarque.push(props.marque)
+      // props.panierprix.push(props.prix)
       
-      console.log(props.paniermarque.length);
-      console.log(props.paniermarque);
+      // console.log(props.paniermarque.length);
+      // console.log(props.paniermarque);
+      
+      // props.setmonpannier((oldArray) => [...oldArray,props.paniermarque ])
+      props.setmonpannier([...props.monpannier, props.marque])
       console.log(props.monpannier);
-      props.setmonpannier((oldArray) => [...oldArray,props.paniermarque ])
-      console.log(props.monpanier);
+      
       
     }
     if (stock<=0) {

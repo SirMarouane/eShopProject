@@ -16,10 +16,6 @@ function App() {
   let panierprix = []
   const [monpannier, setmonpannier] = useState([]) 
   const [items, setitems] = useState(paniermarque.length)
-
-
-  
-  
   
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
