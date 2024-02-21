@@ -11,15 +11,13 @@ import React from "react";
 
 
 function App() {
-  
-  let paniermarque = []
-  let panierprix = []
+
   const [monpannier, setmonpannier] = useState([]) 
-  const [items, setitems] = useState(paniermarque.length)
+  
   
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
-    <Navbar monpannier={monpannier} panierprix={panierprix} paniermarque={paniermarque} info={info} sac={Sac}
+    <Navbar monpannier={monpannier}  info={info} sac={Sac}
             Logo={Logo}
     />
 
@@ -29,7 +27,7 @@ function App() {
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
-              <Cards key={id} monpannier={monpannier} setmonpannier={setmonpannier}  setitems={setitems} items={items} panierprix={panierprix} paniermarque={paniermarque} stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
+              <Cards key={id} monpannier={monpannier} setmonpannier={setmonpannier}   stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
             )
           })
         }
