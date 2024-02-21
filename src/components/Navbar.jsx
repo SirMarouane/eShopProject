@@ -3,20 +3,16 @@ import { useState } from 'react';
 
 export default function Navbar(props) {
     
-    let ewa = ["edgf","zgfd","gfdgdf","gfgd"]
   return (
     <div className='pb-10 w-full'>
-
         <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <img src={props.Logo} width="30%" alt="" />
             </div>
-            
             <div className="navbar-center">
                 <a className="btn btn-ghost text-xl"><span className="text-amber-500">Charlton</span> Luxury Watches</a>
             </div>
             <div className="navbar-end">
-            
             <div className="flex-none">
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -28,7 +24,6 @@ export default function Navbar(props) {
                         <div className="card-body">
                             <span className="font-bold text-lg">{props.monpannier.length} Items</span>
                             <span className="text-info">Subtotal:</span>
-                            
                             <div className="card-actions">
                                 {
                                     props.monpannier.map((element,id)=>{     
@@ -41,17 +36,12 @@ export default function Navbar(props) {
                                     })
                                 }
                             </div>
-                            <div className="card-actions">
-                                {/* <button className="btn btn-primary btn-block"></button> */}
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                
+            </div>    
             </div>
         </div>
-
     </div>
   )
 }

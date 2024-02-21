@@ -9,21 +9,14 @@ import { useState } from "react";
 import { useRef } from "react";
 import React from "react";
 
-
 function App() {
-
   const [monpannier, setmonpannier] = useState([]) 
-  
   
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
-    <Navbar monpannier={monpannier}  info={info} sac={Sac}
-            Logo={Logo}
-    />
-
+    <Navbar monpannier={monpannier}  info={info} sac={Sac} Logo={Logo}/>
     <div className="pt-10 flex justify-center items-center w-[60%] pb-[10%]">
       <div className="flex gap-20 w-[80%] flex-wrap justify-center items-center ">
-        
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
@@ -32,9 +25,7 @@ function App() {
           })
         }
       </div>
-
     </div>
-
     <Footer Logo={Logo}/>
   </div>
   )
