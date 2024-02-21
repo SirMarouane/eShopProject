@@ -21,7 +21,7 @@ export default function Navbar(props) {
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                         <div className="indicator">
-                            <img src={props.sac} width="60%" alt="" /><span className="badge badge-sm indicator-item">{props.panierprix.length}</span>
+                            <img src={props.sac} width="60%" alt=""/><span className="badge badge-sm indicator-item">{props.panierprix.length}</span>
                         </div>
                     </div>
                     <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
@@ -30,12 +30,12 @@ export default function Navbar(props) {
                             <span className="text-info">Subtotal:</span>
                             
                             <div className="card-actions">
-                                <button className="btn btn-primary btn-block">
+                                {/* <button className="btn btn-primary btn-block">
                                  <h1>{props.info.montres_de_luxe[0].marque} {props.info.montres_de_luxe[0].nom}</h1> 
                                  <p className='text-red-600'>{props.info.montres_de_luxe[0].prix}$</p>  
-                                </button>
+                                </button> */}
                                 {
-                                    ewa.map((element,id)=>{
+                                    props.monpannier.map((element,id)=>{     
                                         return (
                                             <button className="btn btn-primary btn-block">
                                             <h1>{props.info.montres_de_luxe[0].marque} {props.info.montres_de_luxe[0].nom}</h1> 
@@ -46,7 +46,7 @@ export default function Navbar(props) {
                                 }
                             </div>
                             <div className="card-actions">
-                                <button className="btn btn-primary btn-block"></button>
+                                {/* <button className="btn btn-primary btn-block"></button> */}
                             </div>
                         </div>
                     </div>

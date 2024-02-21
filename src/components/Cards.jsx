@@ -9,18 +9,22 @@ export default function Cards(props) {
     if (stock>=1) {
       props.paniermarque.push(props.marque)
       props.panierprix.push(props.prix)
-      // props.setitems(props.paniermarque.length)
       
       console.log(props.paniermarque.length);
       console.log(props.paniermarque);
+      console.log(props.monpannier);
+      props.setmonpannier((oldArray) => [...oldArray,props.paniermarque ])
+      console.log(props.monpanier);
       
     }
     if (stock<=0) {
       setstock(0)
     }
-    // console.log(props.paniermarque);
-    // console.log(props.panierprix);
+    
   }
+
+  
+
   return (
     <div className={`card w-60  shadow-xl  hover:bg-[#DCA54C]/35 hover:text-black hover:border-[1px] hover:border-[#DCA54C]/35 ${stock == 1 ? "bg-orange-600" : stock == 0 ? "bg-red-600":"bg-base-100"} `}>
         <figure className="">

@@ -14,13 +14,16 @@ function App() {
   
   let paniermarque = []
   let panierprix = []
+  const [monpannier, setmonpannier] = useState([]) 
   const [items, setitems] = useState(paniermarque.length)
-  let lesitems = 0
+
+
+  
   
   
   return (
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
-    <Navbar panierprix={panierprix} paniermarque={paniermarque} info={info} sac={Sac}
+    <Navbar monpannier={monpannier} panierprix={panierprix} paniermarque={paniermarque} info={info} sac={Sac}
             Logo={Logo}
     />
 
@@ -30,7 +33,7 @@ function App() {
         {
           info.montres_de_luxe.map((elements,id) => {
             return (
-              <Cards key={id} lesitems={lesitems} setitems={setitems} items={items} panierprix={panierprix} paniermarque={paniermarque} stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
+              <Cards key={id} monpannier={monpannier} setmonpannier={setmonpannier}  setitems={setitems} items={items} panierprix={panierprix} paniermarque={paniermarque} stock={info.montres_de_luxe[id].stock} prix={info.montres_de_luxe[id].prix} marque={info.montres_de_luxe[id].marque} nom={info.montres_de_luxe[id].nom} img={info.montres_de_luxe[id].img} ></Cards>
             )
           })
         }
