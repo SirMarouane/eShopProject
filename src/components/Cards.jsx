@@ -11,8 +11,6 @@ export default function Cards(props) {
       props.setmonpannier([...props.monpannier, props.nom])
       props.setbrand([...props.brand, props.marque])
       props.setcout([...props.cout, props.prix])
-      // console.log(props.monpannier); 
-      // console.log(props.brand);
     }
     if (stock<=0) {
       setstock(0)
@@ -29,7 +27,6 @@ export default function Cards(props) {
             <p>{props.marque}</p>
             <p>price:  {props.prix}$</p>
             <p className='text-white'>stock : {stock}</p>
-
             <div className="card-actions">
             <button onClick={()=>{panier()}} className="btn btn-active w-56">buy</button>
             </div>
