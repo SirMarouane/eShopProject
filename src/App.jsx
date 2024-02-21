@@ -8,9 +8,11 @@ import Logo from "./assets/images/logo2.png"
 
 
 function App() {
-  
+
+
   console.log(info.montres_de_luxe[0].stock);
   return (
+    
   <div className="overflow-x-hidden w-[98vw] flex flex-col justify-center items-center">
     <Navbar sac={Sac}
             Logo={Logo}
